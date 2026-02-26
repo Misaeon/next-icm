@@ -43,12 +43,10 @@ author: Misaeon
 copyright: "© Copyright 2026 NEXT-ICM."
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  This is the official website of the NEXT-ICM project.
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+baseurl: "/next-icm" # the subpath of your site, e.g. /blog
+url: "https://misaeon.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "/assets/images/nexticm_favicon.png" # the favicon for your site
 
 # Yat date format
