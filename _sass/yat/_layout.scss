@@ -96,8 +96,8 @@ html {
   margin-right: 50px;
 
   .site-brand-inner {
-    @include relative-font-size(1.125);
-    font-weight: $base-font-weight;
+    @include relative-font-size(1.8);
+    font-weight: 600;
     letter-spacing: -1px;
     transition: 0.1s filter color;
 
@@ -107,7 +107,7 @@ html {
 
     .site-favicon {
       display: inline-block;
-      height: divide($header-height, 1.5);
+      height: 42px;
       margin-right: 5px;
     }
   }
@@ -627,6 +627,18 @@ html {
 
   .page-banner-inner {
     @include vertical-center(relative);
+    .page-banner-heading,
+    .page-banner-subheading {
+      text-align: left;
+    }
+    
+    .page-banner-heading {
+      margin-left: 8%;
+    }
+    
+    .page-banner-subheading {
+      margin-left: 8%;
+    }
 
     color: $banner-text-color;
     padding: 10px 5px;
