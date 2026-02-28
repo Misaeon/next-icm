@@ -46,7 +46,7 @@ description:
   The official website of the NEXT-ICM project.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://next-icm.eu" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "" # the favicon for your site
 
 # Yat date format
@@ -160,9 +160,17 @@ night_mode: "auto"
 # Page default value
 defaults:
   home:
-   heading: "NEXT-ICM"
+    heading: "NEXT-ICM"
     subheading: "NEXT-ICM - NEXT generation sustainable, intelligent, occupant-centric Indoor Climate Management system"
-    banner: "/assets/images/banners/nexticm_background.jpg"
+    banner:
+      video: "/assets/videos/nexticm_video.mp4"
+      loop: true
+      volume: 0
+      start_at: 0
+      opacity: 1.0
+      background: "rgba(0, 0, 0, 0.4)"  # Optional dark overlay
+      height: "100vh"                  # Full screen height
+      min_height: "600px"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
