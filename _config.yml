@@ -169,7 +169,7 @@ defaults:
       start_at: 0
       opacity: 1.0
       background: "rgba(0, 0, 0, 0.4)"  # Optional dark overlay
-      height: "100vh"                  # Full screen height
+      height: "50vh"                  # Full screen height
       min_height: "600px"
 
 # Banner default settings
