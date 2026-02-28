@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: NEXT-ICM
+title: Your awesome title
 email: your-email@domain.com
-author: Misaeon
+author: GitHub User
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -48,8 +48,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://next-icm.eu" # the base hostname & protocol for your site, e.g. https://example.com
-favicon: "/assets/images/banners/nexticm_favicon.png" # the favicon for your site
+url: "" # the base hostname & protocol for your site, e.g. https://example.com
+favicon: "" # the favicon for your site
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -161,10 +161,10 @@ yat:
 
 # Page default value
 # defaults:
-home:
-  heading: "NEXT-ICM"
-  subheading: "NEXT generation sustainable, intelligent, occupant-centric Indoor Climate Management system"
-  banner: "/assets/images/banners/nexticm_background.png"
+#   home:
+#     heading: "Your awesome heading"
+#     subheading: "Your awesome subheading"
+#     banner: "Your image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
