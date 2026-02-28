@@ -2,7 +2,9 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-    <div class="site-footer-inner">
+    <div class="site-footer-inner footer-flex">
+    
+      <div class="footer-left">
         {%- assign currentYear = 'now' | date: "%Y" -%}
         {%- assign copyright = site.copyright
             | replace: '{currentYear}', currentYear
@@ -11,11 +13,30 @@
             | replace: '(p)', '℗'
             | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
         -%}
-      <div>{{ copyright }}</div>
-      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
-      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
-      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
-      <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
+        
+        <div>{{ copyright }}</div>
+    
+        <div>
+          Powered by 
+          <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> 
+          &amp; 
+          <a href="https://github.com/jeffreytse/jekyll-theme-yat" target="_blank">
+            Yat Theme
+          </a>.
+        </div>
+    
+        <div class="footer-hosting">
+          Hosted by 
+          <a href="https://pages.github.com/" target="_blank">
+            GitHub Pages
+          </a>
+        </div>
+      </div>
+    
+      <div class="footer-right">
+        <img src="/assets/images/nexticm_funding.png" 
+             alt="NEXT-ICM Funding Logo" 
+             class="footer-funding-logo">
+      </div>
+    
     </div>
-  </div>
-</footer>
