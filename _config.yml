@@ -161,9 +161,9 @@ yat:
 
 # Page default value
 # defaults:
-   home:
-     heading: "NEXT-ICM"
-     subheading: "NEXT generation sustainable, intelligent, occupant-centric Indoor Climate Management system"
+home:
+  heading: "NEXT-ICM"
+  subheading: "NEXT generation sustainable, intelligent, occupant-centric Indoor Climate Management system"
 #     banner: "Your image url"
 
 # Banner default settings
