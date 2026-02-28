@@ -2,10 +2,6 @@
  * Animation for transparent header
  */
 
-body {
-  background: red !important;
-}
-
 html {
   &[data-header-transparent] {
     header.site-header {
@@ -102,7 +98,7 @@ html {
 
   .site-brand-inner {
     @include relative-font-size(1.8);
-    font-weight: 600;
+    font-weight: 300;
     letter-spacing: -1px;
     transition: 0.1s filter color;
 
@@ -112,7 +108,7 @@ html {
 
     .site-favicon {
       display: inline-block;
-      height: 42px;
+      height: 80px;
       margin-right: 5px;
     }
   }
@@ -631,22 +627,16 @@ html {
   }
 
   .page-banner-inner {
-    @include vertical-center(relative);
-    .page-banner-heading,
-    .page-banner-subheading {
-      text-align: left;
-    }
-    
-    .page-banner-heading {
-      margin-left: 8%;
-    }
-    
-    .page-banner-subheading {
-      margin-left: 8%;
-    }
-
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    text-align: left;
+    padding-left: 8%;
+  
     color: $banner-text-color;
-    padding: 10px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-shadow: 1px 1px 2px #33333355;
 
     & > *:first-child {
