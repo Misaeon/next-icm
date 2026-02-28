@@ -161,7 +161,7 @@ night_mode: "auto"
 defaults:
   home:
     heading: "NEXT-ICM"
-    subheading: "NEXT-ICM - NEXT generation sustainable, intelligent, occupant-centric Indoor Climate Management system"
+    subheading: "NEXT generation sustainable, intelligent, occupant-centric Indoor Climate Management system"
     banner:
       video: "/assets/videos/nexticm_video.mp4"
       loop: true
@@ -169,7 +169,7 @@ defaults:
       start_at: 0
       opacity: 1.0
       background: "rgba(0, 0, 0, 0.4)"  # Optional dark overlay
-      height: "50vh"                  # Full screen height
+      height: "100vh"                  # Full screen height
       min_height: "600px"
 
 # Banner default settings
