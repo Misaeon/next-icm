@@ -196,6 +196,39 @@ html {
   text-align: left;
   transition: background-color 0.2s;
 
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-left div {
+    margin-bottom: 4px;
+  }
+
+  .footer-hosting {
+    font-size: 0.95rem;
+  }
+
+  .footer-right {
+    padding-left: 20px;
+  }
+
+  .footer-funding-logo {
+    height: 80px;
+    width: auto;
+    max-width: 100%;
+  }
+
+  @include media-query($on-palm) {
+    .footer-flex {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
   .site-footer-inner {
     transition: border-top 0.2s;
     padding: $spacing-unit * 1.8 0;
