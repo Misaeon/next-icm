@@ -150,26 +150,28 @@ night_mode: "auto"
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+header_pages:
+  - index.html
+  - archives.html
+  - categories.html
+  - tags.html
+  - about.md
 
 # Page default value
 defaults:
   home:
     heading: "NEXT-ICM"
-    subheading: "NEXT generation sustainable, intelligent, occupant-centric<br>Indoor Climate Management system"
+    subheading: >
+      NEXT generation sustainable, intelligent, occupant-centric
+      Indoor Climate Management system
     banner:
       video: "/assets/videos/nexticm_video.mp4"
       loop: true
       volume: 0
       start_at: 0
       opacity: 1.0
-      background: "rgba(0, 0, 0, 0.4)"  # Optional dark overlay
-      height: "100vh"                  # Full screen height
+      background: "rgba(0, 0, 0, 0.4)"
+      height: "100vh"
       min_height: "600px"
 
 # Banner default settings
