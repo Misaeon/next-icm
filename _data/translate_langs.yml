@@ -1,7 +1,7 @@
 # Translate languages
 # langs refer to https://cloud.google.com/translate/docs/languages
 
-- lang: en-GB
+- lang: en
   img: https://cdn.countryflags.com/thumbs/united-kingdom/flag-400.png
   text: English (UK)
 
