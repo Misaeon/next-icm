@@ -637,6 +637,12 @@ html {
     padding: 10px 5px;
     text-shadow: 1px 1px 2px #33333355;
 
+     /* Add this here — directly inside page-banner-inner */
+    .page-banner-subheading {
+      white-space: pre-line;
+    }
+
+
     & > *:first-child {
       margin: 0;
 
@@ -657,8 +663,6 @@ html {
         font-weight: 300;
         margin-bottom: 0.8em;
         transition: 0.2s all;
-
-        white-space: pre-line;   // ← ADD THIS LINE
 
         @include media-query($on-palm) {
           @include relative-font-size(1.175);
