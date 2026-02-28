@@ -153,6 +153,7 @@ night_mode: "auto"
 header_pages:
   - index.html
   - about.html
+  - team.html
  # - archives.html
   - categories.html
  # - tags.html
