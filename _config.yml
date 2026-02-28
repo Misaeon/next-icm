@@ -153,9 +153,9 @@ night_mode: "auto"
 header_pages:
   - index.html
   - about.html
-  - archives.html
+ # - archives.html
   - categories.html
-  - tags.html
+ # - tags.html
 
 # Page default value
 defaults:
