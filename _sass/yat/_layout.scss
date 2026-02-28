@@ -658,6 +658,8 @@ html {
         margin-bottom: 0.8em;
         transition: 0.2s all;
 
+        white-space: pre-line;   // ← ADD THIS LINE
+
         @include media-query($on-palm) {
           @include relative-font-size(1.175);
         }
