@@ -197,9 +197,20 @@ html {
   transition: background-color 0.2s;
 
   .footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   // vertically center image + text
+  width: 100%;           // important
+  }
+  
+  .footer-left {
+    flex: 1;               // take full available left space
+  }
+  
+  .footer-right {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;        // prevent image from shrinking
   }
 
   .footer-left div {
