@@ -14,7 +14,7 @@
             | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
         -%}
         
-        <div>{{ copyright }}</div>
+        <div>{{ copyright }}</div>    
     
         <div>
           Powered by 
@@ -31,6 +31,11 @@
             GitHub Pages
           </a>
         </div>
+
+        <div class="footer-last-updated">
+          Last updated: {{ site.time | date: "%b %d, %Y" }}
+        </div>
+        
       </div>
     
       <div class="footer-right">
