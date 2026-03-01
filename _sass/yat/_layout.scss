@@ -193,44 +193,31 @@ html {
   @include relative-font-size(1.0);
   color: $footer-text-color;
   background-color: $footer-background-color;
-  text-align: left;
   transition: background-color 0.2s;
 
   .footer-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
     width: 100%;
+    gap: 40px;
   }
 
-  /* Generic column style */
   .footer-col {
-    display: flex;
-    flex-direction: column;
+    white-space: nowrap;   // 🔥 prevents line breaks
   }
 
-  /* Column 1 - Powered / Hosted */
+  /* Column widths adjusted */
   .footer-col-1 {
-    flex: 1;
+    flex: 1.5;
     text-align: left;
-
-    div {
-      margin-bottom: 4px;
-    }
   }
 
-  /* Column 2 - Copyright / Last updated */
   .footer-col-2 {
-    flex: 1;
+    flex: 1.5;
     text-align: center;
-
-    div {
-      margin-bottom: 4px;
-    }
   }
 
-  /* Column 3 - Image */
   .footer-col-3 {
     flex-shrink: 0;
     display: flex;
@@ -243,22 +230,21 @@ html {
     max-width: 100%;
   }
 
-  .footer-hosting {
-    font-size: 0.95rem;
-  }
-
   .site-footer-inner {
-    transition: border-top 0.2s;
     padding: $spacing-unit * 1.8 0;
   }
 
-  /* Mobile layout */
+  /* Mobile */
   @include media-query($on-palm) {
     .footer-flex {
       flex-direction: column;
-      align-items: center;
+      white-space: normal;  // allow wrapping on mobile
+      gap: 20px;
       text-align: center;
-      gap: 25px;
+    }
+
+    .footer-col {
+      white-space: normal;
     }
 
     .footer-col-3 {
@@ -274,11 +260,6 @@ html {
       color: lighten($a-color, 10%);
     }
   }
-}
-
-.copyleft {
-  display: inline-block;
-  transform: rotate(180deg);
 }
 
 /**
