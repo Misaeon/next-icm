@@ -197,32 +197,44 @@ html {
   transition: background-color 0.2s;
 
   .footer-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;   // vertically center image + text
-  width: 100%;           // important
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
   }
-  
-  .footer-left {
-    flex: 1;               // take full available left space
+
+  /* Generic column style */
+  .footer-col {
+    display: flex;
+    flex-direction: column;
   }
-  
-  .footer-right {
+
+  /* Column 1 - Powered / Hosted */
+  .footer-col-1 {
+    flex: 1;
+    text-align: left;
+
+    div {
+      margin-bottom: 4px;
+    }
+  }
+
+  /* Column 2 - Copyright / Last updated */
+  .footer-col-2 {
+    flex: 1;
+    text-align: center;
+
+    div {
+      margin-bottom: 4px;
+    }
+  }
+
+  /* Column 3 - Image */
+  .footer-col-3 {
+    flex-shrink: 0;
     display: flex;
     justify-content: flex-end;
-    flex-shrink: 0;        // prevent image from shrinking
-  }
-
-  .footer-left div {
-    margin-bottom: 4px;
-  }
-
-  .footer-hosting {
-    font-size: 0.95rem;
-  }
-
-  .footer-right {
-    padding-left: 20px;
   }
 
   .footer-funding-logo {
@@ -231,18 +243,27 @@ html {
     max-width: 100%;
   }
 
-  @include media-query($on-palm) {
-    .footer-flex {
-      flex-direction: column;
-      gap: 20px;
-      text-align: center;
-      align-items: center;
-    }
+  .footer-hosting {
+    font-size: 0.95rem;
   }
 
   .site-footer-inner {
     transition: border-top 0.2s;
     padding: $spacing-unit * 1.8 0;
+  }
+
+  /* Mobile layout */
+  @include media-query($on-palm) {
+    .footer-flex {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 25px;
+    }
+
+    .footer-col-3 {
+      justify-content: center;
+    }
   }
 
   a {
