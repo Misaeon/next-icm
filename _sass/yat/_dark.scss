@@ -47,8 +47,21 @@ html[data-theme="dark"]  {
     }
   }
 
+  /* Default dark header (when NOT transparent) */
   .site-header {
     background-color: #090909;
+  }
+  
+  /* Make header transparent when:
+     - dark mode
+     - scroll is at top
+     - header has class site-header-transparent */
+  &[data-scroll-status='top'] {
+    header.site-header.site-header-transparent {
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+  }
 
     .site-brand {
       .site-brand-inner {
