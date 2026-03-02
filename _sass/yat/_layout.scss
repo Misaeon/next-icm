@@ -1094,11 +1094,10 @@ html[data-theme="dark"] {
 }
 
 /* ===== Global Dark Mode Background ===== */
-
 html[data-theme="dark"] body,
 html[data-theme="dark"] .page-content,
-html[data-theme="dark"] .wrapper,
-html[data-theme="dark"] .framework {
+html[data-theme="dark"] .framework,
+html[data-theme="dark"] .wrapper:not(header .wrapper) {
   background-color: #000000 !important;
 }
 
@@ -1128,3 +1127,5 @@ header.site-header {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
+
