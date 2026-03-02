@@ -1112,8 +1112,7 @@ html[data-theme="dark"] .doc-tab-content p {
 }
 
 /* ===== Transparent Header in Dark Mode ===== */
-
-html[data-theme="dark"] .site-header {
+html[data-theme="dark"] header.site-header {
   background-color: transparent !important;
   box-shadow: none !important;
 }
