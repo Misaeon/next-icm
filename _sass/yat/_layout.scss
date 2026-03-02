@@ -1150,7 +1150,7 @@ header.site-header {
   flex-direction: column;
   align-items: center;
   margin-left: auto; /* pushes it to the right */
-  margin-top: 40px;      /* ← pushes image lower */
+  margin-top: 100px;      /* ← pushes image lower */
 }
 
 /* Circular Image */
@@ -1168,16 +1168,21 @@ header.site-header {
 }
 
 /* Website icon below circle */
-.website-icon {
+.card-image .website-icon,
+.card-image .website-icon:visited {
   margin-top: 15px;
-  font-size: 20px;
-  color: #4f46e5;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #000000;          /* normal = black */
   text-decoration: none;
   transition: 0.25s ease;
 }
 
-.website-icon:hover {
-  color: #06b6d4;
+/* Hover = blue */
+.card-image .website-icon:hover {
+  color: #0000FF;          /* pure blue */
   transform: translateY(-3px);
 }
 
