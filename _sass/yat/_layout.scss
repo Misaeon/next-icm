@@ -1110,3 +1110,10 @@ html[data-theme="dark"] .fact-value,
 html[data-theme="dark"] .doc-tab-content p {
   color: #ffffff !important;
 }
+
+/* ===== Transparent Header in Dark Mode ===== */
+
+html[data-theme="dark"] .site-header {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
