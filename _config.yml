@@ -163,8 +163,8 @@ defaults:
   home:
     heading: "NEXT-ICM"
     subheading: |
-      NEXT generation - 
-      sustainable, intelligent, occupant-centric
+      <span style="color:#e53935;">NEXT</span> generation - 
+      <span style="color:#43a047;">sustainable</span>, intelligent, <span style="color:#fdd835;">occupant-centric</span>
       Indoor Climate Management system
     banner:
       video: "/assets/videos/nexticm_video.mp4"
