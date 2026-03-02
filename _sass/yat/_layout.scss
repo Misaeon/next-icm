@@ -956,3 +956,42 @@ a:visited .post-badges .post-badge.badge-new {
 .page-content {
   background: #f4f7fb;
 }
+
+.project-facts {
+  background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.fact-item {
+  background: #ffffff;
+  padding: 22px 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.fact-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+}
+
+.fact-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6366f1;
+  margin-bottom: 8px;
+}
+
+.fact-value {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
