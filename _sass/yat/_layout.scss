@@ -1063,3 +1063,32 @@ a:visited .post-badges .post-badge.badge-new {
     height: 160px;
   }
 }
+
+/* ===== Dark Mode Support for Custom Components ===== */
+
+html[data-theme="dark"] {
+
+  .project-card {
+    background: #1e1e1e;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+  }
+
+  .doc-tab {
+    background: #2a2a2a;
+    border-color: #3a3a3a;
+  }
+
+  .doc-tab:hover {
+    background: #333333;
+    border-color: #6366f1;
+  }
+
+  .doc-tab-content p {
+    color: #bbbbbb;
+  }
+
+  .fact-item {
+    background: #2a2a2a;
+  }
+
+}
