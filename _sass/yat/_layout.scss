@@ -898,15 +898,9 @@ a:visited .post-badges .post-badge.badge-new {
   background-color: $background-color;
 }
 
-/* Hide sidebar only on About page */
+/* Hide TOC only on About page */
 .layout-about {
-  .sidebar {
+  .post-menu {
     display: none !important;
-  }
-
-  .main {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
   }
 }
