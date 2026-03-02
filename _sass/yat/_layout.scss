@@ -1092,3 +1092,21 @@ html[data-theme="dark"] {
   }
 
 }
+
+/* ===== Global Dark Mode Background ===== */
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] .page-content,
+html[data-theme="dark"] .wrapper,
+html[data-theme="dark"] .framework {
+  background-color: #000000 !important;
+}
+
+/* ===== Dark Mode Text Color ===== */
+
+html[data-theme="dark"] p,
+html[data-theme="dark"] li,
+html[data-theme="dark"] .fact-value,
+html[data-theme="dark"] .doc-tab-content p {
+  color: #ffffff !important;
+}
