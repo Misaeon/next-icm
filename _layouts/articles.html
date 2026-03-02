@@ -1,14 +1,24 @@
 ---
 layout: framework
-sidebar: []
+sidebar: category-list
 ---
 
 <div class="articles">
+
   {% if page.banner == nil %}
     {% assign banner = page.title %}
   {% endif %}
 
   {{ content }}
 
-  {% include views/pagination.html %}
+  {% if page.sidebar == false %}
+    {%- comment -%} Homepage → show only 1 latest post {%- endcomment -%}
+    {% for post in site.posts limit:1 %}
+      {% include views/post-item.html %}
+    {% endfor %}
+  {% else %}
+    {%- comment -%} Normal blog page → pagination {%- endcomment -%}
+    {% include views/pagination.html %}
+  {% endif %}
+
 </div>
