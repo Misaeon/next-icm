@@ -897,3 +897,62 @@ a:visited .post-badges .post-badge.badge-new {
   color: $background-color;
   background-color: $background-color;
 }
+
+/* ===== Modern Project Blocks ===== */
+
+.project-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 45px;
+  margin: 50px 0;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 600;
+  position: relative;
+}
+
+.project-card h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  display: block;
+  margin-top: 12px;
+  border-radius: 3px;
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.project-card ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.project-card li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+/* Soft page background */
+.page-content {
+  background: #f4f7fb;
+}
