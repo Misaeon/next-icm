@@ -897,14 +897,3 @@ a:visited .post-badges .post-badge.badge-new {
   color: $background-color;
   background-color: $background-color;
 }
-
-/* Remove sidebar ONLY on about page */
-body.layout-about section.sidebar {
-  display: none !important;
-}
-
-body.layout-about .framework .main {
-  width: 100% !important;
-  max-width: 900px;
-  margin: 0 auto;
-}
