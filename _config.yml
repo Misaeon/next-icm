@@ -155,6 +155,7 @@ header_pages:
   - about.html
   - team.html
   - archives.html
+  - documentation.html
   # - categories.html
   # - tags.html
 
