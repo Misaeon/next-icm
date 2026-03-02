@@ -1117,3 +1117,14 @@ html[data-theme="dark"][data-scroll-status="top"] header.site-header-transparent
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
+html[data-theme="dark"][data-scroll-status="top"] 
+header.site-header .site-header-inner {
+  background-color: transparent !important;
+}
+
+html[data-theme="dark"][data-scroll-status="top"] 
+header.site-header {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
