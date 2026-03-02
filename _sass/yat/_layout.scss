@@ -1128,4 +1128,53 @@ header.site-header {
   box-shadow: none !important;
 }
 
+/* ===== Team page image/webicon ===== */
+.project-card {
+  margin-bottom: 50px;
+}
 
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.card-text {
+  flex: 1;
+}
+
+.card-image {
+  width: 200px;
+  text-align: center;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.website-icon {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 22px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.website-icon:hover {
+  color: #007acc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-content {
+    flex-direction: column;
+  }
+
+  .card-image {
+    width: 160px;
+    margin-top: 20px;
+  }
+}
