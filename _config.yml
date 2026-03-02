@@ -155,8 +155,8 @@ header_pages:
   - about.html
   - team.html
   - archives.html
-  - categories.html
-  - tags.html
+  # - categories.html
+  # - tags.html
 
 # Page default value
 defaults:
