@@ -1128,53 +1128,66 @@ header.site-header {
   box-shadow: none !important;
 }
 
-/* ===== Team page image/webicon ===== */
-.project-card {
-  margin-bottom: 50px;
-}
+/* ===== Team Page Layout ===== */
 
 .card-content {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
+  gap: 50px;
 }
 
+/* Text takes remaining space */
 .card-text {
   flex: 1;
 }
 
+/* Image + icon container (RIGHT SIDE) */
 .card-image {
-  width: 200px;
-  text-align: center;
+  flex: 0 0 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto; /* pushes it to the right */
 }
 
+/* Circular Image */
 .card-image img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.website-icon {
-  display: inline-block;
-  margin-top: 12px;
-  font-size: 22px;
-  color: #333;
-  text-decoration: none;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
   transition: 0.3s ease;
 }
 
-.website-icon:hover {
-  color: #007acc;
+.card-image img:hover {
+  transform: scale(1.05);
 }
 
-/* Responsive Design */
+/* Website icon below circle */
+.website-icon {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #4f46e5;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.website-icon:hover {
+  color: #06b6d4;
+  transform: translateY(-3px);
+}
+
+/* ===== Mobile ===== */
 @media (max-width: 768px) {
   .card-content {
     flex-direction: column;
+    align-items: center;
+    text-align: left;
   }
 
   .card-image {
-    width: 160px;
-    margin-top: 20px;
+    margin-left: 0;
+    margin-top: 25px;
   }
 }
