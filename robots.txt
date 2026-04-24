@@ -1,0 +1,1 @@
+Sitemap: https://next-icm.eu/jekyll-theme-yat/sitemap.xml
